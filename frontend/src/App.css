@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: rgb(8, 18, 47);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  height: 100vh;
+  text-align: center;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.internal-button {
+  background: -webkit-linear-gradient(left, #b12a5b, #ff8177);
+  font-size: 18px;
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.connect-wallet-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+p {
+  margin: 5px;
+}
+
+.account-connected-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  border: 0;
+  border-radius: 12px;
+  background-color: b12a5b;
+  color: black;
+  letter-spacing: 1px;
+  width: 250px;
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: rgb(38, 34, 34);
+  letter-spacing: 2px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.title {
+  display: flex;
+  margin: 30px;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  font-family: "Courier New", sans-serif;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 25px;
+  color: white;
+  font-family: "Courier New", sans-serif;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+button {
+  margin: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.connect-wallet-button {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  width: 300px;
+  height: 50px;
+  font-size: medium;
+}
+
+.action-button {
+  background: -webkit-linear-gradient(left, #b12a5b, #ff8177);
+  font-size: 18px;
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.github-logo {
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
