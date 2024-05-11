@@ -1,12 +1,12 @@
 require("@nomicfoundation/hardhat-toolbox");
-
+require('dotenv').config();
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.24",
   networks :{
     sepolia: {
-      url: "https://eth-sepolia.g.alchemy.com/v2/mEypHBnAV0-26uN74oK24rGYYj4Gyu3v",
-     accounts: ["eb2c34931c12c58c02864b3d6ec99ce09d7b2fd08d51f15de3daa62bf3c91a05"],
+      url: `https://eth-sepolia.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
+      accounts: [process.env.PRIVATE_KEY],
+    },
   },
-},
-}
+};
