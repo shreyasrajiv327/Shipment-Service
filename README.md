@@ -63,7 +63,7 @@ This project is a decentralized application (DApp) built on Ethereum blockchain 
 
 4. Deploy the contract 
     ```bash
-    npx hardhat ignition deploy ./ignition/modules/ShipmentService.js --network sepolia
+    npx hardhat run scripts/deploy.js  --network sepolia
     ```
 
 ### React frontend
