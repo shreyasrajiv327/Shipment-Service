@@ -165,7 +165,7 @@ function ShipmentServiceApp() {
         console.log("Order Status:", status);
         if (status === 0) {
           setOrderStatus("Invalid");
-        } else if (statusNumber === "1") {
+        } else if (statusNumber === 1) {
           setOrderStatus("Processing");
         } else if (statusNumber === 2) {
           setOrderStatus("Shipped");
